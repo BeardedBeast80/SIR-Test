@@ -1,0 +1,13 @@
+{
+  "name": "rivet-sir-android-build",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Builds a native Android APK/AAB wrapper (Trusted Web Activity) around the hosted Rivet SIR PWA, using Bubblewrap. Only used by the GitHub Actions workflow — not part of the app itself.",
+  "scripts": {
+    "scaffold": "node generate-project.js",
+    "build-apk": "bubblewrap build --skipPwaValidation"
+  },
+  "dependencies": {
+    "@bubblewrap/cli": "^1.25.0"
+  }
+}
